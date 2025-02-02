@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bio-graph</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+        transition: color 0.5s ease;
+        }
+        #btn{
+            padding: 1em 2em;
+            border-radius: 1000px;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<button id="btn" onclick="change()">Change</button>
+</div>
+<script>
+   let btn = document.getElementById('btn');
+   let colors = ["#ff5733", "#33ff57", "#3357ff", "#ff33a6", "#f4a261", "#2a9d8f", "#e63946"];
+   let rendom;
+   let istrue = true;
+   function change(){
+ if(istrue){
+     rendom = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = rendom;
+     istrue = false;
+ }else{
+    rendom = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = rendom;
+    istrue = true;
+ }
+   }
+</script>
+</body>
+</html>
