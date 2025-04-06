@@ -42,6 +42,10 @@ const fetchdata = async (location = "London") => {
   rows.appendChild(column1);
   rows.appendChild(column2);
   rows.appendChild(column3);
+  if (srno === 1) {
+    weathername.innerHTML = countryName;
+    column1.innerHTML = countryName;
+  }
   rows.appendChild(column4);
   tableBody.appendChild(rows);
   srno++;
