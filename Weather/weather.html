@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+
+</head>
+<link rel="stylesheet" href="weather.css" />
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="link">
+                <a href="#"> About us</a>
+                <a href="#"> Contact us</a>
+                <a href="#">Details </a>
+                <a href="#"> Help</a>
+            </div>
+            <div class="search">
+                <form action="#">
+                    <input type="text" id="input" class="inputs" />
+                    <button  id="btn">Search</button>
+                </form>
+            </div>
+        </div>
+     <div class="wet-name">
+        <h1>Weather for <span id="name"></span></h1>
+     </div>
+        <div class="department">
+            <div class="calcus box">
+                <div class="head">
+                    Temperature
+                </div>
+                <div class="image-icon">
+              <img src="#" alt="weatherimage" id="image" class="size"/>
+              </div>
+              <div class="content">
+               <h3 class="heading">
+                <span>
+                <p id="calcus-text"></p>
+                </span>
+                <span>°C</span></h3>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="Humidity box">
+                <div class="head">
+                    Humidity
+                </div>
+                <div class="Humidity-icon">
+                    <img src="humidity.jpg" alt="weatherimage" class="icon size"/>
+                    </div>
+                <div class="content">
+                    <h3 class="heading">
+                     <span>
+                     <p id="humidity-text"></p>
+                     </span>
+                     <span>%</span>
+                    </h3>
+                     </div>
+                    </div>
+            <!-- box 3 -->
+            <div class="Wind box">
+                <div class="head">
+                    Wind
+                </div>
+                <div class="Wind-icon">
+                    <img src="wind.jpg" alt="weatherimage" class="icon size"/>
+                    </div>
+                <div class="content">
+                    <h3 class="heading">
+                     <span>
+                     <p id="Wind-text"></p>
+                     </span>
+                     <span>kph</span></h3>
+                     </div>
+                 </div>
+                 </div>
+                <!-- box 4 -->
+                 <div class="footer-part">
+                    <table>
+                        <thead>
+                            <th> Name</th>
+                            <th> Temperature</th>
+                            <th> Humidity</th>
+                            <th>  Wind</th>
+                        </thead>
+
+                        <tbody id="table-body">
+                        </tbody>
+                    </table>
+                </div>   
+            </div>
+    <script src="weather.js"></script>
+</body>
+</html>
